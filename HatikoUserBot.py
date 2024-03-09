@@ -17,14 +17,14 @@ import re
 import importlib
 from importlib import util
 from telethon.tl import types
-
-api_id = 'api_id'
-api_hash = 'api_hash'
-phone_number = '+71239876543'
-client = TelegramClient('random', api_id, api_hash)
-userid = 123456789
-
 import os
+
+api_id = os.getenv("API_ID")
+api_hash = os.getenv("API_HASH")
+phone_number = os.getenv("number")
+client = TelegramClient('random', api_id, api_hash)
+userid = os.getenv("user_id")
+
 from datetime import datetime
 
 @client.on(events.NewMessage(pattern='^🦔$', outgoing=True))
