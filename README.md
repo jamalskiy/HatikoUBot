@@ -1,6 +1,6 @@
 <h1>О Hatiko-Userbot</h1>
 
-<p>Hatiko-Userbot is a Telegram userbot (in case you Hatiko-Userbot - это юзербот для Telegram (если вы не знали, selfbot/userbot используются для автоматизации аккаунтов пользователей).
+<p>Hatiko-Userbot это Telegram userbot (Hatiko-Userbot - это юзербот для Telegram (если вы не знали, selfbot/userbot используются для автоматизации аккаунтов пользователей).
 
 Как же он работает? Работает он очень просто: используя библиотеку telethon, скрипт на питоне подключается к вашему аккаунту (создавая новую сессию) и перехватывает ваши команды.
 
