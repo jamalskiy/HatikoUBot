@@ -26,8 +26,7 @@
 <h4><p>2. Устанавливаем всё необходимое:</p> Обратите внимание:</h4>
 
 <p>При установке в termux будет спрашивать: </br>1. motd (Y/I/N/O/D/Z) [default=N] ?(Пишите: Y (Обязательно большой буквой если написано большой))</br>2. Do you want to continue? [Y/n] (Пишите: Y (Обязательно большой буквой))</p>
-<pre><code>apt-get upgrade -y && apt-get update && apt install python && apt install git && pkg install openssl
- && git clone https://github.com/jamalskiy/HatikoUBot.git && cd HatikoUBot/ && pip install requirements.txt -y
+<pre><code>apt-get upgrade -y && apt-get update && apt install python && apt install git && pkg install openssl && git clone https://github.com/jamalskiy/HatikoUBot.git && cd HatikoUBot/ && pip install requirements.txt -y
 </code></pre>
 
 <h1>Обязательно</h1>
