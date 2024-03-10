@@ -43,8 +43,8 @@ API_ID="1234567" # Замените на свои данные
 API_HASH="abdgsmlpab13vsv" # Замените на свои данные
 number="+71234567890" # Замените на номер аккаунта 
 ```
-
-
+<p>Где взять эти данные?</p>
+<a href='https://tlgrm.ru/docs/api/obtaining_api_id'>*ТЫК*</a> 
 
 <p>Как поменяли данные нажмите: (Везде англ. буквы)</p>
 <p>1. CTRL + O + Enter</p>
@@ -64,5 +64,5 @@ number="+71234567890" # Замените на номер аккаунта
 
 
 
-<h4>Написано на <a href='https://github.com/LonamiWebs/Telethon'>Telethon❤️</a> and <a href='https://github.com/python'>Python❤️</a></h4>
+<h4>Написано на <a href='https://github.com/LonamiWebs/Telethon'>Telethon❤️</a> и <a href='https://github.com/python'>Python❤️</a></h4>
 
