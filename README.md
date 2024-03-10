@@ -19,7 +19,7 @@
 
 <h1>Установка</h1>
 
-<h2>Termux (используйте только <a href='https://f-droid.org/en/packages/com.termux/'>эту</a> версию)</h2>
+<h2>Termux (используйте только <a href='https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0%2Bgithub-debug_arm64-v8a.apk&ved=2ahUKEwjYuqHK1OiEAxUVAhAIHTsOASEQFnoECA8QAQ&usg=AOvVaw32pfVX2vAJMkK9hWOXzM2E'>эту</a> версию)</h2>
 
 
 
