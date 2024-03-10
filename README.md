@@ -1,6 +1,6 @@
 <h1>О Hatiko-Userbot</h1>
 
-<p>Hatiko-Userbot это Telegram userbot (Hatiko-Userbot - это юзербот для Telegram (если вы не знали, selfbot/userbot используются для автоматизации аккаунтов пользователей).
+<p>Hatiko-Userbot это Telegram userbot с открытым исходным кодом (если вы не знали, selfbot/userbot используются для автоматизации аккаунтов пользователей).
 
 Как же он работает? Работает он очень просто: используя библиотеку telethon, скрипт на питоне подключается к вашему аккаунту (создавая новую сессию) и перехватывает ваши команды.
 
@@ -61,7 +61,8 @@ number="+71234567890" # Замените на номер аккаунта
 <pre><code>.команды
 </code></pre>
 
-
+<h2>Следите за обновлениями:</h2>
+<p>Наш канал: <a href='https://t.me/HatikoUserBot'>HatikoUBot</a></p>
 
 <h4>Написано на <a href='https://github.com/LonamiWebs/Telethon'>Telethon❤️</a> и <a href='https://github.com/python'>Python❤️</a></h4>
 
