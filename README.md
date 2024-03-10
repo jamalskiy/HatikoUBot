@@ -1,5 +1,7 @@
 <p align="center">
 
+        <img src="https://telegra.ph/file/97ba4adfdf5ac59a213d9.png" width="500" alt="Dragon-Userbot">
+
     </a>
 
     <br>
@@ -10,13 +12,47 @@
 
     <b>Userbot Telegram с самой простой установкой</b>
 
+    <br>
+
+    <a href='https://github.com/Dragon-Userbot/Dragon-Userbot#installation'>
+
+        Installation
+
+    </a>
+
+    •
+
+    <a href="https://github.com/Dragon-Userbot/Dragon-Userbot/releases">
+
+        Releases
+
+    </a>
+
+    •
+
+    <a href="https://github.com/Dragon-Userbot/Dragon-Userbot#groups-and-support">
+
+        Community
+
+    </a>
+
+    •
+
+    <a href='https://github.com/Dragon-Userbot/Dragon-Userbot#custom-modules'>
+
+        Custom modules
+
+    </a>
+
+    <br>
+
+    <img src="https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge" alt="Code style">
+
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Dragon-Userbot/Dragon-Userbot?style=for-the-badge">
+
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Dragon-Userbot/Dragon-Userbot?style=for-the-badge">
+
 </p>
-
-
-
-
-
-
 
 
 
@@ -35,10 +71,6 @@
 Разработчики не несут ответственности за любые последствия, с которыми вы можете столкнуться при использовании Hatiko-Userbot. Мы также не
 
 ответственности за любой ущерб, нанесенный чатам при использовании Hatiko-Userbot.</p>
-
-
-
-
 
 
 
@@ -66,10 +98,6 @@
 
 
 
-
-
-
-
 </code></pre>
 
 <pre><code>nano .env
@@ -80,9 +108,7 @@
 
 <p>Вставьте этот код и заполните данные:</p>
 
-```
-
-API_ID="1234567" # Замените на свои данные
+```API_ID="1234567" # Замените на свои данные
 
 API_HASH="abdgsmlpab13vsv" # Замените на свои данные
 
