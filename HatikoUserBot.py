@@ -27,7 +27,6 @@ load_dotenv()
 api_id = os.getenv("API_ID")
 api_hash = os.getenv("API_HASH")
 phone_number = os.getenv("number")
-userid = os.getenv("user_id")
 
 client = TelegramClient('random', api_id, api_hash)
 
@@ -43,7 +42,7 @@ async def scan_handler(event: events.NewMessage.Event):
 
 @client.on(events.NewMessage(pattern='.spam'))
 async def spam_handler(event: events.NewMessage.Event):
-    await handle_spam_command(event, userid)
+    await handle_spam_command(event)
 
 @client.on(events.NewMessage(pattern=r'^\.ты гуль\?', outgoing=True))
 async def goul_handler(event: events.NewMessage.Event):
@@ -51,11 +50,11 @@ async def goul_handler(event: events.NewMessage.Event):
 
 @client.on(events.NewMessage(pattern='.moon'))
 async def moon_command_handler(event: events.NewMessage.Event):
-    await handle_moon_command(event, userid, repetitions, delay)
+    await handle_moon_command(event)
 
 @client.on(events.NewMessage(pattern=r'^\❤️ magick'))
 async def animation_command_handler(event: events.NewMessage.Event):
-    await handle_animation_command(event, userid)
+    await handle_animation_command(event)
 
 
 @client.on(events.NewMessage(pattern=r'^\.команды'))
