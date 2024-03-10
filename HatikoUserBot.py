@@ -59,7 +59,7 @@ async def animation_command_handler(event: events.NewMessage.Event):
 
 @client.on(events.NewMessage(pattern=r'^\.команды'))
 async def helpcommand(event: events.NewMessage.Event):
-    reply_text = await help_command(event)
+    reply_text = await handle_help_command(event)
     await event.edit(reply_text)
 
 client.start(phone=phone_number)
