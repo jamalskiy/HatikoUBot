@@ -23,18 +23,13 @@
 
 
 
-<pre><code>apt-get upgrade -y && apt-get update && apt install git && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd HatikoUBot/ && pip install requirements.txt
+<pre><code>apt-get upgrade -y && apt-get update && apt install git && pkg install nano && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd HatikoUBot/ && pip install requirements.txt
 </code></pre>
 
 <h1>Обязательно</h1>
 
 <p>Перед запуском скрипта создайте файл .env и заполните все данные</p>
 
-<pre><code>pkg install nano
-
-
-
-</code></pre>
 <pre><code>nano .env
 </code></pre>
 
@@ -58,8 +53,7 @@ number="+71234567890" # Замените на номер аккаунта
 
 <p>Вот и всё, отсалось запустить</p>
 
-<pre><code>
-bash start
+<pre><code>bash start
 </code></pre>
 
 
