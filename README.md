@@ -23,11 +23,9 @@
 
 <p>1. Даём разрешение к файлом смартфона:</p>
 <pre><code>termux-setup-storage</code></pre>
-<p>2. Устанавливаем всё необходимое:</p>
-<h3>Обратите внимание:</h3>
+<h4><p>2. Устанавливаем всё необходимое:</p> Обратите внимание:</h4>
 
-<p>При установке Python в консоле будет спрашивать: **motd (Y/I/N/O/D/Z) [default=N] ?**</p>
-<p>Везде пишите: N (Обязательно с большой буквы)</p>
+<p>При установке в termux будет спрашивать: </br>1. motd (Y/I/N/O/D/Z) [default=N] ?(Пишите: N(Обязательно большой буквой))</br>2. Do you want to continue? [Y/n] (Пишите: Y(Обязательно большой буквой))</p>
 <pre><code>apt-get upgrade -y && apt-get update && apt install python && apt install git && pkg install nano && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd HatikoUBot/ && pip install requirements.txt -Y
 </code></pre>
 
