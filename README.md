@@ -1,4 +1,3 @@
-
 <h1>О Hatiko-Userbot</h1>
 
 <p>Hatiko-Userbot is a Telegram userbot (in case you Hatiko-Userbot - это юзербот для Telegram (если вы не знали, selfbot/userbot используются для автоматизации аккаунтов пользователей).
@@ -23,7 +22,7 @@
 
 
 
-<pre><code>apt-get upgrade -y && apt-get update && apt install python && apt install git && pkg install nano && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd HatikoUBot/ && pip install requirements.txt
+<pre><code>apt-get upgrade -y && apt-get update && apt install python && apt install git && pkg install nano && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd HatikoUBot/ && pip install requirements.txt -Y
 </code></pre>
 
 <h1>Обязательно</h1>
