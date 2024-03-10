@@ -24,16 +24,9 @@
 
 
 <pre><code>apt-get upgrade -y && apt-get update && apt install git && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd HatikoUBot/ && pip install requirements.txt
-
 </code></pre>
 
-
-
 <h1>Обязательно</h1>
-
-
-
-
 
 <p>Перед запуском скрипта создайте файл .env и заполните все данные</p>
 
@@ -42,28 +35,22 @@
 
 
 </code></pre>
-
 <pre><code>nano .env
-
-
-
 </code></pre>
 
 <p>Вставьте этот код и заполните данные:</p>
 
-```API_ID="1234567" # Замените на свои данные
-
+```
+API_ID="1234567" # Замените на свои данные
 API_HASH="abdgsmlpab13vsv" # Замените на свои данные
-
 number="+71234567890" # Замените на номер аккаунта 
-
 ```
 
 
 
-<p>Как поменяли данные нажмите 1. CTRL + O + Enter, дальше CTRL + X (Везде англ. буквы)</p>
-
-
+<p>Как поменяли данные нажмите: (Везде англ. буквы)</p>
+<p>1. CTRL + O + Enter</p>
+<p>2. CTRL + X</p>
 
 <h3>Обратите внимание:</h3>
 
@@ -71,10 +58,8 @@ number="+71234567890" # Замените на номер аккаунта
 
 <p>Вот и всё, отсалось запустить</p>
 
-<pre><code>bash start
-
-
-
+<pre><code>
+bash start
 </code></pre>
 
 
