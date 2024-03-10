@@ -21,7 +21,9 @@
 <h2>Termux (используйте только <a href='https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0%2Bgithub-debug_arm64-v8a.apk&ved=2ahUKEwjYuqHK1OiEAxUVAhAIHTsOASEQFnoECA8QAQ&usg=AOvVaw32pfVX2vAJMkK9hWOXzM2E'>эту</a> версию)</h2>
 
 
-
+<p>1. Даём разрешение к файлом смартфона:</p>
+<pre><code>termux-setup-storage</code></pre>
+<p>2. Устанавливаем всё необходимое:</p>
 <pre><code>apt-get upgrade -y && apt-get update && apt install python && apt install git && pkg install nano && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd HatikoUBot/ && pip install requirements.txt -Y
 </code></pre>
 
