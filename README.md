@@ -23,7 +23,7 @@
 
 
 
-<pre><code>apt-get upgrade -y && apt-get update && apt install git && pkg install nano && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd HatikoUBot/ && pip install requirements.txt
+<pre><code>apt-get upgrade -y && apt-get update && apt install python && apt install git && pkg install nano && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd HatikoUBot/ && pip install requirements.txt
 </code></pre>
 
 <h1>Обязательно</h1>
