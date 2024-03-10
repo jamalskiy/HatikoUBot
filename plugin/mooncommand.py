@@ -1,9 +1,9 @@
 import asyncio
 
-async def handle_moon_command(event, userid):
+async def handle_moon_command(event):
     user_id = event.sender_id
 
-    if event.sender_id == userid:
+    if event.sender_id == user_id:
         user_text = event.text[len('.moon') + 1:].strip()
         moon_sequence = [
             '🌖 ',
@@ -21,9 +21,8 @@ async def handle_moon_command(event, userid):
                 message = ""
                 
                 if user_text:
-                    message += user_text + " "
-                    message += moon
+                    message += user_text + " " + moon
                 else:
-                    message += moon
-                await client.edit_message(event.chat_id, event.message.id, message)
+                    message += "Сладких снов ❤️"+ moon + "❤️"
+                await event.edit(message)
                 await asyncio.sleep(0.9)

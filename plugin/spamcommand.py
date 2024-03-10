@@ -1,9 +1,10 @@
 import asyncio
 
-async def handle_spam_command(event, userid):
+async def handle_spam_command(event):
     try:
-        if event.sender_id == userid:
-            user_id = event.sender_id
+        user_id = event.sender_id
+
+        if event.sender_id == user_id:
 
             _, repetitions, *text = event.text.split(' ')
             repetitions = int(repetitions)

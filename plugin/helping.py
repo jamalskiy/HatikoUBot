@@ -1,6 +1,7 @@
-async def help_command(event):
+async def handle_help_command(event):
     user_id = event.sender_id
-    message = '''Доступные команды:
+    if event.sender_id == user_id:
+        message = '''Доступные команды:
 
 1) .moon - стандарт обычная луна.
 2) .moon ваш текст.
@@ -10,6 +11,6 @@ async def help_command(event):
 6) 🦔 - минимультик
 7) .scan - информация о сообщении (для разработчиков)
 '''
-    texti = "попьём чай с конфетами ☕️🍬? "
-    text = message + texti
-    return text
+        texti = "попьём чай с конфетами ☕️🍬? "
+        text = message + texti
+        return text

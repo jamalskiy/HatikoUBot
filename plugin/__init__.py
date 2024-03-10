@@ -1,5 +1,5 @@
 from .scan import handle_scan_command
-from .helpcommand import handle_help_command
+from .helping import handle_help_command
 from .animationcommand import handle_animation_command
 from .mooncommand import handle_moon_command
 from .minimulti import handle_minimulti_command
