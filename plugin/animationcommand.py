@@ -1,4 +1,14 @@
 import asyncio
+import re
+
+async def read_frames_from_file(file_path):
+    try:
+        with open(file_path, 'rb') as file:
+            content = file.read().decode('utf-8')
+            frames = re.findall(r"'''(.*?)'''", content, re.DOTALL)
+        return frames
+    except FileNotFoundError:
+        return None
 
 async def handle_animation_command(event):
     file_path = 'magick.py'

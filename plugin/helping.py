@@ -1,5 +1,6 @@
 async def handle_help_command(event):
     user_id = event.sender_id
+
     if event.sender_id == user_id:
         message = '''Доступные команды:
 
