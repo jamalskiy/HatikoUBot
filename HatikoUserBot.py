@@ -18,12 +18,17 @@ import importlib
 from importlib import util
 from telethon.tl import types
 import os
+from dotenv import load_dotenv
+from plugin import *
+
+load_dotenv()
 
 api_id = os.getenv("API_ID")
 api_hash = os.getenv("API_HASH")
 phone_number = os.getenv("number")
-client = TelegramClient('random', api_id, api_hash)
 userid = os.getenv("user_id")
+
+client = TelegramClient('random', api_id, api_hash)
 
 from datetime import datetime
 
@@ -31,28 +36,17 @@ from datetime import datetime
 async def handler(event: events.NewMessage.Event):
     for i in range(19):
         await event.edit('🍎'*(18 - i) + '🦔')
-        await asyncio.sleep(.5) # Задержка в секундах(0.5 стандарт)
+        await asyncio.sleep(.5)
 
 @client.on(events.NewMessage(pattern='.scan'))
 async def handler(event: events.NewMessage.Event):
     try:
         msg = await event.message.get_reply_message()
-        try:
-            sender_name = f'{msg.sender.title}'
-        except:
-            sender_name = f'{msg.sender.first_name} {msg.sender.last_name}'
-
-        reply_text = f'┌ Информация о сканировании:\n'\
-                     f'├ Имя пользователя: @{msg.sender.username}\n'\
-                     f'├ ID пользователя: {msg.sender.id}\n'\
-                     f'├ Полное имя: {sender_name}\n'\
-                     f'├ Чат ID: {event.chat_id}\n'\
-                     f'└ ID сообщения: {event._message_id}'
-
-
+        reply_text = await handle_scan_command(event, msg)
     except Exception as e:
         print(e)
         reply_text = f"Ошибка: {e}"
+
     await event.edit(reply_text)
 
 @client.on(events.NewMessage(pattern='.spam'))
@@ -68,10 +62,10 @@ async def repeat_message(event):
 
             for _ in range(repetitions):
                 await event.respond(message_text)
-                await asyncio.sleep(0.07)   # Задержка в секундах
+                await asyncio.sleep(0.07)
             
     except ValueError:
-        await event.respond("Некорректные аргументы.\n\nПример: .spam 6 я спамер")
+        await event.respond("Некорректные аргументы.\n\nПример: .spam 6 Hatiko")
 
 @client.on(events.NewMessage(pattern='.moon'))
 async def handle_moon_command(event: events.NewMessage.Event):
@@ -131,20 +125,9 @@ async def handle_animation_command(event):
                 await asyncio.sleep(0.25)   # Задержка в секундах между кадрами анимации
 
 @client.on(events.NewMessage(pattern=r'^\.команды'))
-async def handle_hi_command(event: events.NewMessage.Event):
-    user_id = event.sender_id
-    message = '''Доступные команды:
-
-1) .moon - стандарт обычная луна.
-2) .moon ваш текст.
-3) .spam (кол-во сообщений) (любой ваш текст) - (вводить без скоб).
-4) .animate - анимация из сердечек.
-5) .ты гуль? - спам 1000 - 7.
-'''
-    texti = "попьём чай с конфетами ☕️🍬? "
-    text = message + texti
-
-    await event.edit(text)
+async def helpcommand(event: events.NewMessage.Event):
+    reply_text = await help_command(event)
+    await event.edit(reply_text)
 
 @client.on(events.NewMessage(pattern=r'^\.ты гуль\?', outgoing=True))
 async def you_goul(event):
