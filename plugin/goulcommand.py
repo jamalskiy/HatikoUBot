@@ -1,3 +1,16 @@
+'''
+Автор кода: Jamalskiy
+Телеграмм канал: @HatikoUserBot
+Версия кода: 0.0.1
+
+
+Обратная связь:
+Telegram: @abanentick2
+
+Либо можете задать вопрос в GitHub: 
+https://github.com/jamalskiy/HatikoUBot
+'''
+
 import asyncio
 
 async def handle_goul_command(event):

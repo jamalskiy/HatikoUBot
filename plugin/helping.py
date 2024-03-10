@@ -1,3 +1,16 @@
+'''
+Автор кода: Jamalskiy
+Телеграмм канал: @HatikoUserBot
+Версия кода: 0.0.1
+
+
+Обратная связь:
+Telegram: @abanentick2
+
+Либо можете задать вопрос в GitHub: 
+https://github.com/jamalskiy/HatikoUBot
+'''
+
 async def handle_help_command(event):
     user_id = event.sender_id
 
