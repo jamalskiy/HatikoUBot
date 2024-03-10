@@ -1,3 +1,5 @@
+![image](https://imgs.search.brave.com/WOEUCj_FFTNSPDWEqBzYrcFxlLjblm3vj1_MogZlLWo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93aGVy/ZWRvZXN0aGVhbmlt/ZWxlYXZlb2ZmLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8xMi9hLWdpcmwt/YW5kLWhlci1ndWFy/ZC1kb2ctYW5pbWUu/anBn)
+
 <h1>О Hatiko-Userbot</h1>
 
 <p>Hatiko-Userbot это Telegram userbot с открытым исходным кодом (если вы не знали, selfbot/userbot используются для автоматизации аккаунтов пользователей).
