@@ -1,10 +1,8 @@
 ![image](https://imgs.search.brave.com/WOEUCj_FFTNSPDWEqBzYrcFxlLjblm3vj1_MogZlLWo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93aGVy/ZWRvZXN0aGVhbmlt/ZWxlYXZlb2ZmLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8xMi9hLWdpcmwt/YW5kLWhlci1ndWFy/ZC1kb2ctYW5pbWUu/anBn)
 
-# 🚀 О версии 0.0.2
+# 🚀 О версии 0.0.3
 
-<p>🔹 Заменили префикс с "." на "!"</br></p>
-<p>🔹 Теперь команды можно писать как на русском, так и английском. Пример: - !moon - !луна</br></p>
-<p>🔹 Теперь мини-мультик можно активировать одной из 4 фраз: еж/ёж/ежик/ёжик </p>
+<p>🔹 Добавлена команда !about</br></p>
 
 # 🤖 О Hatiko-Userbot
 
