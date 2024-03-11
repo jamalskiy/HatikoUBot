@@ -30,37 +30,37 @@ phone_number = os.getenv("number")
 
 client = TelegramClient('random', api_id, api_hash)
 
-@client.on(events.NewMessage(pattern='^🦔$', outgoing=True))
+@client.on(events.NewMessage(pattern=re.compile(r'^\!(еж|ёж|ежик|ёжик)', re.IGNORECASE)))
 async def minimulti_handler(event: events.NewMessage.Event):
     await handle_minimulti_command(event)
 
-@client.on(events.NewMessage(pattern='.scan'))
+@client.on(events.NewMessage(pattern=re.compile(r'^\!(scan|скан)', re.IGNORECASE)))
 async def scan_handler(event: events.NewMessage.Event):
     msg = await event.message.get_reply_message()
     reply_text = await handle_scan_command(event, msg)
     await event.edit(reply_text)
 
-@client.on(events.NewMessage(pattern='.spam'))
+@client.on(events.NewMessage(pattern=re.compile(r'^\!(spam|спам)', re.IGNORECASE)))
 async def spam_handler(event: events.NewMessage.Event):
     await handle_spam_command(event)
 
-@client.on(events.NewMessage(pattern=r'^\.ты гуль\?', outgoing=True))
+@client.on(events.NewMessage(pattern=r'^\!ты гуль\?', outgoing=True))
 async def goul_handler(event: events.NewMessage.Event):
     await handle_goul_command(event)
 
-@client.on(events.NewMessage(pattern='.moon'))
+@client.on(events.NewMessage(pattern=re.compile(r'^\!(moon|луна)', re.IGNORECASE)))
 async def moon_command_handler(event: events.NewMessage.Event):
     await handle_moon_command(event)
 
-@client.on(events.NewMessage(pattern=r'^\❤️ magick'))
+@client.on(events.NewMessage(pattern=re.compile(r'^\(❤️ magick|❤️ магия)', re.IGNORECASE)))
 async def animation_command_handler(event: events.NewMessage.Event):
     await handle_animation_command(event)
 
-
-@client.on(events.NewMessage(pattern=r'^\.команды'))
+@client.on(events.NewMessage(pattern=re.compile(r'^\!(команды|команда|хелп)', re.IGNORECASE)))
 async def helpcommand(event: events.NewMessage.Event):
     reply_text = await handle_help_command(event)
     await event.edit(reply_text)
+
 
 client.start(phone=phone_number)
 client.run_until_disconnected()
