@@ -71,10 +71,11 @@ number="+71234567890" # Замените на номер аккаунта
 
 <h2>🔄 Следите за обновлениями:</h2>
 <p>Наш канал: <a href='https://t.me/HatikoUserBot'>HatikoUBot</a></p>
+
+<h4>Написано на <a href='https://github.com/LonamiWebs/Telethon'>Telethon❤️</a> и <a href='https://github.com/python'>Python❤️</a></h4>
+
 ## Разработчики и те кто внёс вклад в проект
 
 <a href="https://github.com/jamalskiy"><img src="https://avatars.githubusercontent.com/u/155892199?v=4" alt="Jamalskiy" width="40" height="40"></a>
 <a href="https://github.com/PashaSalt"><img src="https://avatars.githubusercontent.com/u/162937401?v=4" alt="PashaSalt" width="40" height="40"></a>
-
-<h4>Написано на <a href='https://github.com/LonamiWebs/Telethon'>Telethon❤️</a> и <a href='https://github.com/python'>Python❤️</a></h4>
 
