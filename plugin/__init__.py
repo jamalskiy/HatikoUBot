@@ -5,3 +5,4 @@ from .mooncommand import handle_moon_command
 from .minimulti import handle_minimulti_command
 from .spamcommand import handle_spam_command
 from .goulcommand import handle_goul_command
+from .about import about
