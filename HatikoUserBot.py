@@ -52,7 +52,7 @@ async def goul_handler(event: events.NewMessage.Event):
 async def moon_command_handler(event: events.NewMessage.Event):
     await handle_moon_command(event)
 
-@client.on(events.NewMessage(pattern=re.compile(r'^\(❤️ magick|❤️ магия)', re.IGNORECASE)))
+@client.on(events.NewMessage(pattern=re.compile(r'^(❤️ magick|❤️ магия)', re.IGNORECASE)))
 async def animation_command_handler(event: events.NewMessage.Event):
     await handle_animation_command(event)
 
