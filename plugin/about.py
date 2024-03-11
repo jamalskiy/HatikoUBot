@@ -20,4 +20,4 @@ async def about(event):
 3. Круги из видео.
 4. Установка видео по ссылке с YouTube Shorts и ТТ
         '''
-        await event.edit(message)
+        return message
