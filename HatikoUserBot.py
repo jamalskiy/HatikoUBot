@@ -1,7 +1,7 @@
 '''
 Автор кода: Jamalskiy
 Телеграмм канал: @HatikoUserBot
-Версия кода: 0.0.1
+Версия кода: 0.0.2
 
 
 Обратная связь:
@@ -59,11 +59,6 @@ async def animation_command_handler(event: events.NewMessage.Event):
 @client.on(events.NewMessage(pattern=re.compile(r'^\!(команды|команда|хелп)', re.IGNORECASE)))
 async def helpcommand(event: events.NewMessage.Event):
     reply_text = await handle_help_command(event)
-    await event.edit(reply_text)
-
-@client.on(events.NewMessage(pattern=re.compile(r'^\!(about|о проекте)', re.IGNORECASE)))
-async def about(event: events.NewMessage.Event):
-    reply_text = await about(event)
     await event.edit(reply_text)
 
 client.start(phone=phone_number)
