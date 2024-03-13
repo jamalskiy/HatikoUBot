@@ -32,13 +32,6 @@ user_id = os.getenv("userid")
 
 client = TelegramClient('random', api_id, api_hash)
 
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS hatiko (
-        laungage INTEGER
-    )
-''')
-conn.commit()
-
 @client.on(events.NewMessage(pattern=re.compile(r'^\!(еж|ёж|ежик|ёжик)', re.IGNORECASE)))
 async def minimulti_handler(event: events.NewMessage.Event):
     await handle_minimulti_command(event, user_id)
