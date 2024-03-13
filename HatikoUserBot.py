@@ -61,8 +61,9 @@ async def animation_command_handler(event: events.NewMessage.Event):
 @client.on(events.NewMessage(pattern=re.compile(r'^\!(команды|хелп)', re.IGNORECASE)))
 async def helpcommand(event: events.NewMessage.Event):
     global user_id
-    reply_text = await handle_help_command(event, user_id)
-    await event.edit(reply_text)
+    if event.sender_id == user_id:
+        reply_text = await handle_help_command(event)
+        await event.edit(reply_text)
 
 @client.on(events.NewMessage(pattern=re.compile(r'^\!(about|о проекте)', re.IGNORECASE)))
 async def about(event: events.NewMessage.Event):
