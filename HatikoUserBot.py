@@ -28,7 +28,7 @@ load_dotenv()
 api_id = os.getenv("API_ID")
 api_hash = os.getenv("API_HASH")
 phone_number = os.getenv("number")
-user_id = os.getenv("userid")
+user_id = os.getenv("user_id")
 
 client = TelegramClient('random', api_id, api_hash)
 
