@@ -1,7 +1,6 @@
 import asyncio
 
-async def about(event):
-    user_id = event.sender_id
+async def handle_about_command(event, user_id):
 
     if event.sender_id == user_id:
         message='''
