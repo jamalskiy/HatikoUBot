@@ -36,7 +36,8 @@ Hatiko-Userbot это Telegram userbot с открытым исходным ко
 ```
 API_ID="1234567" # Замените на свои данные
 API_HASH="abdgsmlpab13vsv" # Замените на свои данные
-number="+71234567890" # Замените на номер аккаунта 
+number="+71234567890" # Замените на номер аккаунта
+user_id="12345678" # Можно узнать у @useridinfobot
 ```
 <p>Где взять эти данные? <a href='https://tlgrm.ru/docs/api/obtaining_api_id'>*ТЫК*</a></p>
 
