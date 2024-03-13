@@ -1,7 +1,7 @@
 async def handle_help_command(event, user_id):
 
     if event.sender_id == user_id:
-        message = '''Доступные команды:
+        reply_text = '''Доступные команды:
 
 1) `!moon`/`!луна` - стандартный текст спокойной ночи.
 2) `!moon`/`!луна` ваш текст.
@@ -13,4 +13,4 @@ async def handle_help_command(event, user_id):
 
 8) `!about`/`!о проекте` - Информация о проекте
 '''
-        return message
+        return reply_text
