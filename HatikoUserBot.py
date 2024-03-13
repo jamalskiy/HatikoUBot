@@ -58,7 +58,7 @@ async def moon_command_handler(event: events.NewMessage.Event):
 async def animation_command_handler(event: events.NewMessage.Event):
     await handle_animation_command(event, user_id)
 
-@client.on(events.NewMessage(pattern=re.compile(r'^\!(команды|команда|хелп)', re.IGNORECASE)))
+@client.on(events.NewMessage(pattern=re.compile(r'^\!(команды|хелп)', re.IGNORECASE)))
 async def helpcommand(event: events.NewMessage.Event):
     reply_text = await handle_help_command(event, user_id)
     await event.edit(reply_text)
