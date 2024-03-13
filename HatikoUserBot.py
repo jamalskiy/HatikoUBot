@@ -60,8 +60,7 @@ async def animation_command_handler(event: events.NewMessage.Event):
 
 @client.on(events.NewMessage(pattern=re.compile(r'^\!(команды|хелп)', re.IGNORECASE)))
 async def helpcommand(event: events.NewMessage.Event):
-    global user_id
-    if event.sender_id == user_id:
+    if event.sender_id == int(user_id):
         reply_text = await handle_help_command(event)
         await event.edit(reply_text)
 
