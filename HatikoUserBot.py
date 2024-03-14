@@ -67,7 +67,7 @@ async def helpcommand(event: events.NewMessage.Event):
 @client.on(events.NewMessage(pattern=re.compile(r'^\!(about|о проекте)', re.IGNORECASE)))
 async def helpcommand(event: events.NewMessage.Event):
     if event.sender_id == int(user_id):
-        reply_text = await about(event)
+        reply_text = await handle_about_command(event)
         await event.edit(reply_text)
 
 client.start(phone=phone_number)
