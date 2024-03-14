@@ -10,12 +10,12 @@ async def read_frames_from_file(file_path):
     except FileNotFoundError:
         return None
 
-async def handle_animation_command(event, user_id):
+async def handle_animation_command(event):
     file_path = 'magick.py'
 
-    if event.sender_id == user_id:
-        frames = await read_frames_from_file(file_path)
-        if frames:
-            for frame in frames:
-                await event.edit(frame)
-                await asyncio.sleep(0.25)
+    frames = await read_frames_from_file(file_path)
+    
+    if frames:
+        for frame in frames:
+            await event.edit(frame)
+            await asyncio.sleep(0.25)
