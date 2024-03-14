@@ -1,9 +1,8 @@
 import asyncio
 
-async def handle_about_command(event, user_id):
+async def handle_about_command(event):
 
-    if event.sender_id == user_id:
-        message='''
+    reply_text='''
 О проекте HatikoUBot:
 
 1. Разработчик: @abanentick2
@@ -19,4 +18,4 @@ async def handle_about_command(event, user_id):
 3. Круги из видео.
 4. Установка видео по ссылке с YouTube Shorts и ТТ
         '''
-        return message
+    return reply_text
