@@ -14,7 +14,9 @@ def check_env_file():
             if line.strip() and not line.startswith('#'):
                 key, value = line.strip().split('=', 1)
                 if key in required_variables:
-                    del required_variables[key]
+                    # Сравниваем значение из файла с значением в required_variables
+                    if value.strip() == required_variables[key].split('=')[1].strip('"'):
+                        del required_variables[key]
 
     if required_variables:
         for key, value in required_variables.items():
@@ -32,5 +34,4 @@ def main():
         print("Все необходимые данные введены. Запуск файла 'start'...")
         os.system("bash starts")
 
-if __name__ == "__main__":
-    main()
+main()
