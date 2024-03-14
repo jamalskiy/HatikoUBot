@@ -14,20 +14,19 @@ def check_env_file():
             if line.strip() and not line.startswith('#'):
                 key, value = line.strip().split('=', 1)
                 if key in required_variables:
-                    # Сравниваем значение из файла с значением в required_variables
                     if value.strip() == required_variables[key].split('=')[1].strip('"'):
                         del required_variables[key]
 
     if required_variables:
         for key, value in required_variables.items():
-            missing_variables.append(f"{key} не введена. {value}")
+            missing_variables.append(f"[ERROR]Замените {key} на свой. Используйте nano .env")
 
     return missing_variables
 
 def main():
     missing = check_env_file()
     if missing:
-        print("Для каждой переменной следует внести корректировки:")
+        print("[INFO] Замените следующие данные:")
         for item in missing:
             print(item)
 
