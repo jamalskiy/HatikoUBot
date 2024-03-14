@@ -27,9 +27,10 @@ def check_env_file():
 def main():
     missing = check_env_file()
     if missing:
+        print("Для каждой переменной следует внести корректировки:")
         for item in missing:
-            print("Один или несколько данных не введены:")
             print(item)
+
     else:
         print("Все необходимые данные введены. Запуск файла 'start'...")
         os.system("bash starts")
