@@ -42,7 +42,7 @@ async def scan_handler(event: events.NewMessage.Event):
     if event.sender_id == int(user_id):
         msg = await event.message.get_reply_message()
         reply_text = await handle_scan_command(event, msg)
-       await event.edit(reply_text)
+        await event.edit(reply_text)
 
 @client.on(events.NewMessage(pattern=re.compile(r'^\!(spam|спам)', re.IGNORECASE)))
 async def spam_handler(event: events.NewMessage.Event):
