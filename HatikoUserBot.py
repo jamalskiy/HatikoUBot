@@ -65,9 +65,10 @@ async def helpcommand(event: events.NewMessage.Event):
         await event.edit(reply_text)
 
 @client.on(events.NewMessage(pattern=re.compile(r'^\!(about|о проекте)', re.IGNORECASE)))
-async def about(event: events.NewMessage.Event):
-    reply_text = await about(event, user_id)
-    await event.edit(reply_text)
+async def helpcommand(event: events.NewMessage.Event):
+    if event.sender_id == int(user_id):
+        reply_text = await about(event)
+        await event.edit(reply_text)
 
 client.start(phone=phone_number)
 client.run_until_disconnected()
