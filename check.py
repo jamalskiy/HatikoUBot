@@ -13,7 +13,7 @@ def check_env_file():
         "number": "number=\"+71234567890\"",
         "user_id": "user_id=\"12345678\""
     }
-    missing_variables = []
+    modified_variables = []
 
     try:
         with open('.env', 'r') as file:
@@ -22,23 +22,17 @@ def check_env_file():
                     key, value = line.strip().split('=', 1)
                     value = value.strip().strip('"')
                     if key in required_variables:
-                        print(f"Значение из файла .env для {key}: {value}")
                         expected_value = required_variables[key].split('=')[1].split('#')[0].strip().strip('"')
-                        print(f"Ожидаемое значение для {key}: {expected_value}")
                         if value.lower() == expected_value.lower():
-                            del required_variables[key]
+                            modified_variables.append(f"[INFO] Значение переменной {key} соответствует ожидаемому. Замените на свои данные.")
 
-        if required_variables:
-            for key, value in required_variables.items():
-                missing_variables.append(f"[ERROR] Замените {key} на свой.")
+        if modified_variables:
+            for item in modified_variables:
+                print(item)
 
     except FileNotFoundError:
-        for key, value in required_variables.items():
-            missing_variables.append(f"[ERROR] Файл .env отсутствует. Замените {key} на свой.")
-    
-    print(missing_variables)
+        pass
 
-    return missing_variables
 
 def check_version():
     with open('HatikoUserBot.py', 'r') as file:
