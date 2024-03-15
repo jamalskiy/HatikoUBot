@@ -26,9 +26,9 @@ def check_env_file():
     return missing_variables
 
 def check_version():
-    with open('HatikoUBot.py', 'r') as file:
+    with open('HatikoUserBot.py', 'r') as file:
         contents = file.read()
-        version_line = [line for line in contents.split('\n') if line.strip().startswith('__version__')][0]
+        version_line = [line for line in contents.split('\n') if line.strip().startswith('version')][0]
         local_version = version_line.split('=')[1].strip().strip('"')
 
     url = "https://github.com/jamalskiy/HatikoUBot/releases"
@@ -45,7 +45,6 @@ def main():
     check = check_version()
     if check == ERROR:
         print("[INFO VERSION] У вас неактуальная версия, обновитесь с помощью команды git pull")
-        break
     missing = check_env_file()
     if missing:
         print("[INFO] Замените следующие данные:")
