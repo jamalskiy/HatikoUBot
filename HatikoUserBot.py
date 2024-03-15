@@ -3,7 +3,6 @@
 Телеграмм канал: @HatikoUserBot
 Версия кода: 0.0.1
 
-
 Обратная связь:
 Telegram: @abanentick2
 
@@ -29,7 +28,7 @@ api_id = os.getenv("API_ID")
 api_hash = os.getenv("API_HASH")
 phone_number = os.getenv("number")
 user_id = os.getenv("user_id")
-version = "0.0.1"
+version = "0.0.0"
 client = TelegramClient('random', api_id, api_hash)
 
 @client.on(events.NewMessage(pattern=re.compile(r'^\!(еж|ёж|ежик|ёжик)', re.IGNORECASE)))
