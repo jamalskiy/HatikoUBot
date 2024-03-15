@@ -1,4 +1,4 @@
-![image](https://imgs.search.brave.com/WOEUCj_FFTNSPDWEqBzYrcFxlLjblm3vj1_MogZlLWo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93aGVy/ZWRvZXN0aGVhbmlt/ZWxlYXZlb2ZmLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8xMi9hLWdpcmwt/YW5kLWhlci1ndWFy/ZC1kb2ctYW5pbWUu/anBn)
+![image](https://img.freepik.com/premium-photo/anime-girl-boy-romance-relationship-valentine-s-day-concept-generative-ai_717906-2726.jpg)
 
 # 🚀 О версии 0.0.2
 
@@ -55,7 +55,7 @@ user_id="12345678" # Можно узнать у @useridinfobot
 <pre><code>bash start
 </code></pre>
 <p>Чтобы узнать доступные команды, напишите в любой чат эту команду</p>
-<pre><code>.команды
+<pre><code>!команды
 </code></pre>
 
 # 🚫 Отказ от ответственности
