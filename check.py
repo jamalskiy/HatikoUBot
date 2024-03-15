@@ -39,11 +39,13 @@ def check_version():
         latest_version = latest_version_tag.text.strip()
 
         if local_version != latest_version:
-            print("[INFO VERSION] У вас неактуальная версия, обновитесь с помощью команды git pull")
-            return
+            return ERROR
 
 def main():
-    check_version()
+    check = check_version()
+    if check == ERROR:
+        print("[INFO VERSION] У вас неактуальная версия, обновитесь с помощью команды git pull")
+        break
     missing = check_env_file()
     if missing:
         print("[INFO] Замените следующие данные:")
