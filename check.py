@@ -20,7 +20,7 @@ def check_env_file():
             for line in file:
                 if line.strip() and not line.startswith('#'):
                     key, value = line.strip().split('=', 1)
-                    value = value.strip().strip('"')
+                    value = value.strip().strip('"')  # Удаляем кавычки вокруг значения
                     if key in required_variables:
                         print(f"Значение из файла .env для {key}: {value}")
                         print(f"Ожидаемое значение для {key}: {required_variables[key].split('=')[1].strip('\"')}")
@@ -35,9 +35,12 @@ def check_env_file():
         for key, value in required_variables.items():
             missing_variables.append(f"[ERROR] Файл .env отсутствует. Замените {key} на свой.")
     
-    print(missing_variables) 
+    print(missing_variables)  # Добавляем вывод отладочной информации
 
     return missing_variables
+
+check_env_file()
+
 
 def check_version():
     with open('HatikoUserBot.py', 'r') as file:
