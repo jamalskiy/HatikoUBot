@@ -55,7 +55,7 @@ echo '''
 echo "[INFO] HatikoUserBot Запущен."
 echo """[INFO] Автор кода: Jamalskiy
 [INFO] Телеграмм канал: @HatikoUserBot
-[INFO] Версия кода: 0.0.3
+[INFO] Версия кода: 0.0.1
 [INFO] Обратная связь:
 [INFO] Telegram: @abanentick2"""
 echo "[INFO FOR THE STOP] Чтобы остановить, нажмините CTRL + C"
