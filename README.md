@@ -40,8 +40,8 @@ API_HASH="abdgsmlpab13vsv"
 number="+71234567890"
 user_id="12345678"
 ```
-<p>Где взять эти данные? <a href='https://tlgrm.ru/docs/api/obtaining_api_id'>*ТЫК*</a></p>
-<p>Где взять user_id? <a href='https://t.me/seridinfobot'>*ТЫК*</a></p>
+<p>Где взять эти данные? <a href='https://tlgrm.ru/docs/api/obtaining_api_id'> *ТЫК*</a></p>
+<p>Где взять user_id? <a href='https://t.me/useridinfobot'> *ТЫК*</a></p>
 <p>Как поменяли данные нажмите: (Везде англ. буквы)</p>
 <p>1. CTRL + O + Enter</p>
 <p>2. CTRL + X</p>
