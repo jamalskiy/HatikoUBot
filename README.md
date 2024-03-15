@@ -27,21 +27,21 @@ Hatiko-Userbot это Telegram userbot с открытым исходным ко
 </code></pre>
 
 
-<p>3. создайте файл .env и заполните все данные</p>
+<p>3. создайте файл .env</p>
 
 <pre><code>nano .env
 </code></pre>
 
-<p>4. Вставьте этот код и заполните данные:</p>
+<p>4. Вставьте этот код и заполните свои данные:</p>
 
 ```
-API_ID="1234567" # Замените на свои данные
-API_HASH="abdgsmlpab13vsv" # Замените на свои данные
-number="+71234567890" # Замените на номер аккаунта
-user_id="12345678" # Можно узнать у @useridinfobot
+API_ID="1234567"
+API_HASH="abdgsmlpab13vsv"
+number="+71234567890"
+user_id="12345678"
 ```
 <p>Где взять эти данные? <a href='https://tlgrm.ru/docs/api/obtaining_api_id'>*ТЫК*</a></p>
-
+<p>Где взять user_id? <a href='https://t.me/seridinfobot'>*ТЫК*</a></p>
 <p>Как поменяли данные нажмите: (Везде англ. буквы)</p>
 <p>1. CTRL + O + Enter</p>
 <p>2. CTRL + X</p>
