@@ -49,7 +49,7 @@ def main():
         print("[INFO] Замените следующие данные:")
         for item in missing:
             print(item)
-            print([INFO FOR EDIT] Используйте nano .env)
+            print("[INFO FOR EDIT] Используйте nano .env")
 
     else:
         print("Все необходимые данные введены. Запуск файла 'start'...")
