@@ -50,9 +50,9 @@ def main():
     if check == ERROR:
         print("[INFO VERSION] У вас неактуальная версия")
         print("[INFO VERSION] Запуск обновление")
-        sys.exit(1)
         sleep.time(3)
         os.system("git pull")
+        sys.exit(1)
     missing = check_env_file()
     if missing:
         print("[INFO] Замените следующие данные:")
