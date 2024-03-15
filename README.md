@@ -79,4 +79,5 @@ user_id="12345678" # Можно узнать у @useridinfobot
 
 <a href="https://github.com/jamalskiy"><img src="https://avatars.githubusercontent.com/u/155892199?v=4" alt="Jamalskiy" width="40" height="40"></a>
 <a href="https://github.com/PashaSalt"><img src="https://avatars.githubusercontent.com/u/162937401?v=4" alt="PashaSalt" width="40" height="40"></a>
+<a href="https://github.com/Sentmen767"><img src="https://avatars.githubusercontent.com/u/162962885?v=4" alt="Sentmen767" width="40" height="40"></a>
 
