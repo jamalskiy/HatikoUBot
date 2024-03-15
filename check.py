@@ -25,7 +25,7 @@ def check_env_file():
 
     if required_variables:
         for key, value in required_variables.items():
-            missing_variables.append(f"[ERROR]Замените {key} на свой. Используйте nano .env")
+            missing_variables.append(f"[ERROR]Замените {key} на свой.")
 
     return missing_variables
 
@@ -61,7 +61,7 @@ def main():
         print("[INFO] Замените следующие данные:")
         for item in missing:
             print(item)
-            print("[INFO FOR EDIT] Используйте nano .env")
+        print("[INFO FOR EDIT] Используйте nano .env")
 
     else:
         print("[INFO FOR EDIT] Данные актуальные. Запуск скрипта...")
