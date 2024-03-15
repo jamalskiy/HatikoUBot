@@ -1,6 +1,10 @@
 import os
+import sys
 import requests
 from bs4 import BeautifulSoup
+import time
+
+ERROR = "error"
 
 def check_env_file():
     required_variables = {
@@ -44,7 +48,11 @@ def check_version():
 def main():
     check = check_version()
     if check == ERROR:
-        print("[INFO VERSION] У вас неактуальная версия, обновитесь с помощью команды git pull")
+        print("[INFO VERSION] У вас неактуальная версия")
+        print("[INFO VERSION] Запуск обновление")
+        sys.exit(1)
+        sleep.time(3)
+        os.system("git pull")
     missing = check_env_file()
     if missing:
         print("[INFO] Замените следующие данные:")
