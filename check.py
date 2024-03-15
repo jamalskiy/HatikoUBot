@@ -15,19 +15,25 @@ def check_env_file():
     }
     missing_variables = []
 
-    with open('.env', 'r') as file:
-        for line in file:
-            if line.strip() and not line.startswith('#'):
-                key, value = line.strip().split('=', 1)
-                if key in required_variables:
-                    if value.strip() == required_variables[key].split('=')[1].strip('"'):
-                        del required_variables[key]
+    try:
+        with open('.env', 'r') as file:
+            for line in file:
+                if line.strip() and not line.startswith('#'):
+                    key, value = line.strip().split('=', 1)
+                    if key in required_variables:
+                        if value.strip() == required_variables[key].split('=')[1].strip('"'):
+                            del required_variables[key]
 
-    if required_variables:
+        if required_variables:
+            for key, value in required_variables.items():
+                missing_variables.append(f"[ERROR] Замените {key} на свой.")
+
+    except FileNotFoundError:
         for key, value in required_variables.items():
-            missing_variables.append(f"[ERROR]Замените {key} на свой.")
+            missing_variables.append(f"[ERROR] Файл .env отсутствует. Создайте файл.")
 
     return missing_variables
+
 
 def check_version():
     with open('HatikoUserBot.py', 'r') as file:
