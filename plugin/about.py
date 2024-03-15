@@ -2,13 +2,13 @@ import asyncio
 
 async def handle_about_command(event):
 
-    reply_text='''
+    reply_text=f'''
 О проекте HatikoUBot:
 
 1. Разработчик: @abanentick2
 2. Исходный код: https://github.com/jamalskiy/HatikoUBot
 3. ТГК: @HatikoUserBot
-4. Версия: 0.0.1
+4. Версия: {version}
 
 
 Что планируется сделать в будущем:
