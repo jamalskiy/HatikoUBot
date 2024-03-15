@@ -46,6 +46,7 @@ def check_version():
             return ERROR
 
 def main():
+    print("[INFO VERSION] Проверка обновление...")
     check = check_version()
     if check == ERROR:
         print("[INFO VERSION] У вас неактуальная версия")
@@ -53,6 +54,8 @@ def main():
         time.sleep(3)
         os.system("git pull")
         sys.exit(1)
+    print("[INFO VERSION] Версия актуальная. Проверяем данные...")
+    time.sleep(3)
     missing = check_env_file()
     if missing:
         print("[INFO] Замените следующие данные:")
@@ -61,7 +64,8 @@ def main():
             print("[INFO FOR EDIT] Используйте nano .env")
 
     else:
-        print("Все необходимые данные введены. Запуск файла 'start'...")
+        print("[INFO FOR EDIT] Данные актуальные. Запуск скрипта...")
+        time.sleep(3)
         os.system("bash starts")
 
 main()
