@@ -1,4 +1,5 @@
 import asyncio
+from HatikoUserBot import version
 
 async def handle_about_command(event):
 
