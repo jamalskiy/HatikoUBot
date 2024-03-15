@@ -35,12 +35,9 @@ def check_env_file():
         for key, value in required_variables.items():
             missing_variables.append(f"[ERROR] Файл .env отсутствует. Замените {key} на свой.")
     
-    print(missing_variables)
+    print(missing_variables) 
 
     return missing_variables
-
-check_env_file()
-
 
 def check_version():
     with open('HatikoUserBot.py', 'r') as file:
